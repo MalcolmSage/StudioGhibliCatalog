@@ -1,15 +1,57 @@
 .App {
+  position: fixed;
   text-align: center;
+  background-image: url("../img/Background.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
+h1 {
+  font-size: 3vw;
+}
+
+p {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 20px;
+}
 .slide {
+  margin: 10px;
+  padding-top: 3vw;
+  height: 100%;
   display: flex;
+  align-content: center;
   justify-content: space-between;
 
+}
+
+.centerSlide {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 300px;
+  width: 100%;
 }
 
 button {
   font-size: 100px;
   height: 200px;
   width: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  .centerSlide {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 3100%;
+    width: 100%;
+  }
+  button {
+    font-size: 100px;
+    height: 100%;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 300px;
+  }
 }

@@ -50,10 +50,17 @@ class App extends Component {
       <div className="App">
         <h1>Studio Ghibli Films</h1>
         <main className="slide">
-          <button onClick={this.moveLeft}>&#171;</button>
-          {allFilms[this.state.currentFilm]}
-          <button onClick={this.moveRight}>&#187;</button>
+          <div className="leftButton button">
+            <button onClick={this.moveLeft}>&#171;</button>
+          </div>
+          <div className="centerSlide">
+            {allFilms[this.state.currentFilm]}
+          </div>
+          <div className="rightButton button">
+            <button onClick={this.moveRight}>&#187;</button>
+          </div>
         </main>
+        <div className="background"></div>
       </div>
       
     );
